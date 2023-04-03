@@ -1,5 +1,7 @@
-package practica_1;
+package practica1;
 import java.util.Scanner; //Importamos la librería para usar el scanner
+
+//HOY ES UN NUEVO DÍA Y HEMOS REALIZADO OTROS CAMBIOS
 
 /**
  * La calse notas representa las notas de cada alumno
