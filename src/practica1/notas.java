@@ -3,6 +3,8 @@ import java.util.Scanner; //Importamos la librería para usar el scanner
 
 //HOY ES UN NUEVO DÍA Y HEMOS REALIZADO OTROS CAMBIOS
 
+//CREAMOS OTRA ACTUALIZACIÓN MÁS
+
 /**
  * La calse notas representa las notas de cada alumno
  * calcularemos la nota total y sabremos si está aprobado 
