@@ -30,7 +30,7 @@ public class notas {
 	 * Método donde se ingresarán las notas
 	 */
 	
-	public void IngresaNotas() {
+	public void ingresarNotasUf() {
 		System.out.println("ingrese las notas del estudiante");
 		
 		System.out.print("ingrese nota 1: ");
@@ -46,7 +46,7 @@ public class notas {
 	/**
 	 * Método para comprobar que las notas estén bien introducidas
 	 */
-	public void comprobarcion(){
+	public void comprobarNotas(){
 		
 		if (nota1>10) {
 			System.out.println(" nota1 mal introducida");
@@ -77,7 +77,7 @@ public class notas {
 	 * def es la nota definitiva
 	 * NO MUESTRA NADA, SOLO ALMACENA Y CALCULA
 	 */
-	public void Calculonotas() {
+	public void calcularPorcentajeNotas() {
 		notaPorcentaje1= nota1*0.35;
 		notaPorcentaje2 = nota2 * 0.35;
 		notaPorcentaje3 = nota3 * 0.30;
@@ -90,7 +90,7 @@ public class notas {
 	 *  las 3 notas con su porcentaje aplicado y la 
 	 *  nota definitiva
 	 */
-	public void Mostrar() {
+	public void mostrarTodo() {
 		System.out.println(" notas introducidas son:");
 		System.out.println(" nota1 = " + nota1);
 		System.out.println(" nota2 = " + nota2);
@@ -107,7 +107,7 @@ public class notas {
  	 *  Método que comprueba si la nota definitiva es aprobada,
  	 *   suspensa o hay un error
  	 */
-	public void aprobado() {
+	public void comprobarAprobado() {
 			
 			if(notaDefinitiva<5 && notaDefinitiva>=0) {
 				System.out.println("suspendio");
@@ -127,16 +127,16 @@ public class notas {
 	public static void main(String[] args) {
 		notas fc= new notas();
 		
-		fc.IngresaNotas();
+		fc.ingresarNotasUf();
 		
-		fc.comprobarcion();
+		fc.comprobarNotas();
 		
 
-		fc.Calculonotas();
+		fc.calcularPorcentajeNotas();
 		
-		fc.Mostrar();
+		fc.mostrarTodo();
 		
-		fc.aprobado();	
+		fc.comprobarAprobado();	
 	}
 }
 
